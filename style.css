@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    overflow-x: hidden;
+}
+
+/* SCROLL HEIGHT */
+.stack-container {
+    height: 400vh; /* 4 sections */
+}
+
+/* EACH SECTION */
+.stack-section {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+/* CONTENT CENTER */
+.stack-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGE */
+.image-container {
+    position: relative;
+    max-width: 400px;
+    width: 90%;
+}
+
+.stack-image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* NAME */
+.hero-title {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #000;
+}
+
+/* CARD */
+.venue-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    color: white;
+}
+
+.venue-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.divider {
+    color: gold;
+}
+
+.venue-title {
+    font-size: 28px;
+}
+
+.venue-title span {
+    color: gold;
+}
+
+/* MAP */
+.map-container iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* BUTTON */
+.direction-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: gold;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
