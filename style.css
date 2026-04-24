@@ -1,333 +1,317 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #0a0a0a;
-    overflow-x: hidden;
-}
-
-/* SCROLL HEIGHT */
+  font-family: "Poppins", sans-serif;
+  background: #0a0a0a;
+  overflow-x: hidden;
+} /* SCROLL HEIGHT */
 .stack-container {
-    height: 400vh;
+  height: 400vh;
 }
-
 .stack-section {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    width: 100%;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
 }
-
 .stack-section.active {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-    z-index: -10;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  z-index: -10;
 }
-
 .stack-section.slide-in {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-    z-index: 10;
-    transition: all 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  z-index: 10;
+  transition: all 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-
 .stack-section.slide-out {
-    opacity: 0;
-    transform: translateY(-100vh) scale(0.95);
-    transition: all 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+  transform: translateY(-100vh) scale(0.95);
+  transition: all 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-
 .stack-content {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
-
 .image-container {
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
-    position: relative;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
 }
-
 .stack-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin: 1px auto 30px;
-    border-radius: 25px;
-    box-shadow:
-        0 50px 100px rgba(0,0,0,0.7),
-        0 0 0 1px rgba(255,255,255,0.1);
-    transform: scale(0.98);
-    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 1px auto 30px;
+  border-radius: 25px;
+  box-shadow:
+    0 50px 100px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  transform: scale(0.98);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-
 .stack-section.active .stack-image {
-    transform: scale(1.03);
-}
-
-/* 🎨 PERFECTED HERO TITLE */
+  transform: scale(1.03);
+} /* 🎨 PERFECTED HERO TITLE */
 .hero-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.7rem, 5vw, 2rem);
-   
-    letter-spacing: 3px;
-    position: absolute;
-    top: 61%;
-    left: 51%;
-    
-  
-    z-index: 20;
-    white-space: nowrap;
-    max-width: 480px; /* ✅ YOUR REQUEST */
-    text-align: center;
- 
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.7rem, 5vw, 2rem);
+  letter-spacing: 3px;
+  position: absolute;
+  top: 61%;
+  left: 51%;
+  z-index: 20;
+  white-space: nowrap;
+  max-width: 480px; /* ✅ YOUR REQUEST */
+  text-align: center;
 }
-
 .stack-section.active .hero-title {
-    opacity: 1;
-    transform: translate(-51%, -60%) scale(1.02);
-}
-
-/* 🎨 NEW GLASSMORPHISM - 3 UNIQUE COLOR COMBINATIONS */
+  opacity: 1;
+  transform: translate(-51%, -60%) scale(1.02);
+} /* 🎨 NEW GLASSMORPHISM - 3 UNIQUE COLOR COMBINATIONS */
 .venue-card {
-    position: relative;
-    backdrop-filter: blur(30px) saturate(200%);
-    -webkit-backdrop-filter: blur(30px) saturate(200%);
-    border-radius: 30px;
-    padding: 50px 40px;
-    max-width: 700px;
-    width: 100%;
-    border: 1px solid;
-    box-shadow:
-        0 25px 50px rgba(0,0,0,0.6),
-        inset 0 1px 0 rgba(255,255,255,0.2),
-        0 8px 32px rgba(0,0,0,0.3);
-    overflow: hidden;
-}
-
-/* HALDI - VIBRANT ORANGE-GOLD ✨ */
+  position: relative;
+  backdrop-filter: blur(30px) saturate(200%);
+  -webkit-backdrop-filter: blur(30px) saturate(200%);
+  border-radius: 30px;
+  padding: 30px 40px;
+  max-width: 700px;
+  width: 100%;
+  border: 1px solid;
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 8px 32px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+} /* HALDI - VIBRANT ORANGE-GOLD ✨ */
 .haldi-card {
-    background: 
-        linear-gradient(135deg, rgba(255, 193, 7, 0.15), rgba(255, 152, 0, 0.12)),
-        rgba(255, 193, 7, 0.05);
-    border-image: linear-gradient(45deg, #ff9800, #ffc107, #ff5722) 1;
-    border-image-slice: 1;
-}
-
-/* WEDDING - ELEGANT PURPLE-GOLD 💜 */
+  background:
+    linear-gradient(135deg, rgba(255, 193, 7, 0.15), rgba(255, 152, 0, 0.12)),
+    rgba(255, 193, 7, 0.05);
+  border-image: linear-gradient(45deg, #ff9800, #ffc107, #ff5722) 1;
+  border-image-slice: 1;
+} /* WEDDING - ELEGANT PURPLE-GOLD 💜 */
 .wedding-card {
-    background: 
-        linear-gradient(135deg, rgba(156, 39, 176, 0.15), rgba(103, 58, 183, 0.12)),
-        rgba(255, 235, 59, 0.08);
-    border-image: linear-gradient(45deg, #9c27b0, #e1bee7, #f4d03f) 1;
-    border-image-slice: 1;
-}
-
-/* THIRD SECTION - COOL CYAN-BLUE 🌊 */
+  background:
+    linear-gradient(135deg, rgba(156, 39, 176, 0.15), rgba(103, 58, 183, 0.12)),
+    rgba(255, 235, 59, 0.08);
+  border-image: linear-gradient(45deg, #9c27b0, #e1bee7, #f4d03f) 1;
+  border-image-slice: 1;
+} /* THIRD SECTION - COOL CYAN-BLUE 🌊 */
 .venue-card:nth-child(3) {
-    background: 
-        linear-gradient(135deg, rgba(33, 150, 243, 0.15), rgba(0, 188, 212, 0.12)),
-        rgba(255, 255, 255, 0.03);
-    border-image: linear-gradient(45deg, #00bcd4, #2196f3, #03a9f4) 1;
-    border-image-slice: 1;
-}
-
-/* SHIMMER EFFECT */
+  background:
+    linear-gradient(135deg, rgba(33, 150, 243, 0.15), rgba(0, 188, 212, 0.12)),
+    rgba(255, 255, 255, 0.03);
+  border-image: linear-gradient(45deg, #00bcd4, #2196f3, #03a9f4) 1;
+  border-image-slice: 1;
+} /* SHIMMER EFFECT */
 .venue-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, 
-        transparent, 
-        rgba(255,255,255,0.1), 
-        transparent);
-    transform: rotate(45deg);
-    transition: all 0.6s;
-    opacity: 0;
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  transition: all 0.6s;
+  opacity: 0;
 }
-
 .venue-card:hover::before {
-    animation: shimmer 1.5s infinite;
+  animation: shimmer 1.5s infinite;
 }
-
 @keyframes shimmer {
-    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); opacity: 0; }
-    50% { opacity: 1; }
-    100% { transform: translateX(100%) translateY(100%) rotate(45deg); opacity: 0; }
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+    opacity: 0;
+  }
 }
-
-.venue-header { 
-    text-align: center; 
-    margin-bottom: 40px; 
-    position: relative;
-    z-index: 2;
+.venue-header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
 }
-
 .divider {
-    display: block;
-    color: #CC0659 !important;
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 25px;
-    letter-spacing: 4px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  display: block;
+  color: #cc0659 !important;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 4px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
-
 .venue-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 6vw, 3rem);
-    color: #ffffff !important;
-    margin: 0;
-    text-shadow: 
-        0 4px 12px rgba(0,0,0,0.7),
-        0 0 20px rgba(255,255,255,0.2);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: #ffffff !important;
+  margin: 0;
+  text-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.2);
 }
-
 .venue-title span {
-    color: #CC0659 !important;
-    font-weight: 700;
-    text-shadow: 0 2px 8px rgba(244, 208, 63, 0.5);
+  color: #cc0659 !important;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(244, 208, 63, 0.5);
 }
-
-.venue-info { 
-    text-align: center; 
-    position: relative;
-    z-index: 2;
+.venue-info {
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
-
 .venue-info p {
-    font-size: 1.4rem;
-    color: #f0f0f0 !important;
-    margin-bottom: 25px;
-    font-weight: 400;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  font-size: 1.4rem;
+  color: #f0f0f0 !important;
+  margin-bottom: 25px;
+  font-weight: 400;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
-
 .map-container {
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 30px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    position: relative;
-    z-index: 2;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 2;
 }
-
 .map-container iframe {
-    width: 100%;
-    height: 250px;
-    border: none;
-    border-radius: 10px;
-    margin: 20px 0;
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+  margin: 20px 0;
 }
-
 .direction-btn {
-    display: inline-block;
-    background: linear-gradient(45deg, #f4d03f, #f1c40f);
-    color: #1a1a1a !important;
-    padding: 18px 40px;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: all 0.4s ease;
-    box-shadow: 0 15px 35px rgba(244, 208, 63, 0.4);
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    z-index: 2;
+  display: inline-block;
+  background: linear-gradient(45deg, #f4d03f, #f1c40f);
+  color: #1a1a1a !important;
+  padding: 18px 40px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+  box-shadow: 0 15px 35px rgba(244, 208, 63, 0.4);
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 2;
 }
-
 .direction-btn:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 25px 50px rgba(244, 208, 63, 0.6);
-    color: #1a1a1a !important;
-}
-
-/* Scroll Hint */
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 25px 50px rgba(244, 208, 63, 0.6);
+  color: #1a1a1a !important;
+} /* Scroll Hint */
 .scroll-hint {
-    position: fixed;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgba(255,255,255,0.9);
-    font-size: 0.85rem;
-    font-weight: 300;
-    z-index: 100;
-    text-align: center;
-    pointer-events: none;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.85rem;
+  font-weight: 300;
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
 }
-
 .mouse-scroll {
-    width: 24px;
-    height: 44px;
-    margin: 10px auto 0;
-    border: 2px solid rgba(255,255,255,0.4);
-    border-radius: 25px;
+  width: 24px;
+  height: 44px;
+  margin: 10px auto 0;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
 }
-
 .mouse-scroll span {
-    display: block;
-    width: 2px;
-    height: 6px;
-    margin: 4px auto;
-    background: linear-gradient(45deg, #f4d03f, #ff9800);
-    border-radius: 2px;
-    animation: scroll-bounce 2s infinite;
+  display: block;
+  width: 2px;
+  height: 6px;
+  margin: 4px auto;
+  background: linear-gradient(45deg, #f4d03f, #ff9800);
+  border-radius: 2px;
+  animation: scroll-bounce 2s infinite;
 }
-
 @keyframes scroll-bounce {
-    0% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(20px); opacity: 0; }
-}
-
-/* RESPONSIVE - UPDATED WITH YOUR VALUES */
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+} /* RESPONSIVE - UPDATED WITH YOUR VALUES */
 @media (max-width: 768px) {
-    .stack-section { 
-        transition: all 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
-    }
-    .stack-section.slide-out, 
-    .stack-section.slide-in { 
-        transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
-    }
-
-    .stack-image { max-width: 90vw; margin: 1px auto; }
-    .hero-title { 
-        letter-spacing: 1px; 
-        top: 65%; 
-        left: 50.5%; 
-        font-size: clamp(1.5rem, 4.5vw, 1.8rem);
-        max-width: 90vw; /* ✅ Responsive max-width */
-    }
-    .venue-card { 
-        padding: 40px 25px; 
-        margin: 20px; 
-    }
-    .map-container iframe { height: 280px; }
-    .direction-btn { padding: 15px 30px; font-size: 1.1rem; }
+  .stack-section {
+    transition: all 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .stack-section.slide-out,
+  .stack-section.slide-in {
+    transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .stack-image {
+    max-width: 90vw;
+    margin: 1px auto;
+  }
+  .hero-title {
+    letter-spacing: 1px;
+    top: 65%;
+    left: 55%;
+    font-size: clamp(1.5rem, 4.5vw, 1.8rem);
+    max-width: 90vw; /* ✅ Responsive max-width */
+  }
+  .venue-card {
+    padding: 40px 25px;
+    margin: 20px;
+  }
+  .map-container iframe {
+    height: 280px;
+  }
+  .direction-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
 }
-
 @media (max-width: 360px) {
-    .stack-image { max-width: 85vw; }
-    .hero-title { 
-        top: 64.2%; /* ✅ YOUR EXACT VALUE */
-        letter-spacing: 1.5px; /* ✅ YOUR EXACT VALUE */
-        max-width: 480px; /* ✅ Maintains your max-width */
-        left: 50%; /* ✅ Perfect centering */
-        font-size: clamp(1.3rem, 4vw, 1.6rem);
-    }
-    .venue-card { padding: 30px 20px; margin: 15px; }
+  .stack-image {
+    max-width: 85vw;
+  }
+  .hero-title {
+    top: 64.2%; /* ✅ YOUR EXACT VALUE */
+    letter-spacing: 1.5px; /* ✅ YOUR EXACT VALUE */
+    max-width: 480px; /* ✅ Maintains your max-width */
+    left: 55%; /* ✅ Perfect centering */
+    font-size: clamp(1.3rem, 4vw, 1.6rem);
+  }
+  .venue-card {
+    padding: 30px 20px;
+    margin: 15px;
+  }
 }
-
+ 
+/* ✅ 1st और 2nd section के बीच gap कम करने के लिए */
+.stack-section:nth-child(1) {
+  height: 65vh; /* 100vh से 70vh - कम scroll distance */
+}
 
