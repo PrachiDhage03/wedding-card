@@ -176,7 +176,7 @@ body {
 
 .divider {
     display: block;
-    color: #f4d03f !important;
+    color: #CC0659 !important;
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 25px;
@@ -195,7 +195,7 @@ body {
 }
 
 .venue-title span {
-    color: #f4d03f !important;
+    color: #CC0659 !important;
     font-weight: 700;
     text-shadow: 0 2px 8px rgba(244, 208, 63, 0.5);
 }
@@ -305,7 +305,7 @@ body {
     .stack-image { max-width: 90vw; margin: 1px auto; }
     .hero-title { 
         letter-spacing: 1px; 
-        top: 61%; 
+        top: 65%; 
         left: 50.5%; 
         font-size: clamp(1.5rem, 4.5vw, 1.8rem);
         max-width: 90vw; /* ✅ Responsive max-width */
@@ -318,14 +318,16 @@ body {
     .direction-btn { padding: 15px 30px; font-size: 1.1rem; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
     .stack-image { max-width: 85vw; }
     .hero-title { 
-        top: 65.7%; /* ✅ YOUR EXACT VALUE */
+        top: 64.2%; /* ✅ YOUR EXACT VALUE */
         letter-spacing: 1.5px; /* ✅ YOUR EXACT VALUE */
         max-width: 480px; /* ✅ Maintains your max-width */
         left: 50%; /* ✅ Perfect centering */
-        font-size: clamp(1.4rem, 4vw, 1.6rem);
+        font-size: clamp(1.3rem, 4vw, 1.6rem);
     }
     .venue-card { padding: 30px 20px; margin: 15px; }
 }
+
+

@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     guestElement.textContent = formattedName;
     console.log("Guest name set:", formattedName);
   } else {
-    guestElement.textContent = " ";
+    guestElement.textContent = " संजय तुकाराम धागे";
     console.log("No guest name - using default");
   }
 });
