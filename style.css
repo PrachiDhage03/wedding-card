@@ -71,7 +71,15 @@ body {
   z-index: 20;
   white-space: nowrap;
   max-width: 480px; /* ✅ YOUR REQUEST */
-  text-align: center;
+  text-align: start;
+
+
+}
+
+@keyframes shine {
+  0% { background-position: -100%; }
+  100% { background-position: 100%; }
+
 }
 .stack-section.active .hero-title {
   opacity: 1;
